@@ -1,9 +1,13 @@
-import React from 'react'
+import { Button } from "@mantine/core";
+import React from "react";
 
 function NavBar() {
-  return (
-    <div>NavBar</div>
-  )
+    return (
+        <>
+            <Button variant="outline">Home</Button>
+            <Button>Contact</Button>
+        </>
+    );
 }
 
-export default NavBar
+export default NavBar;
