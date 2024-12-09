@@ -1,11 +1,19 @@
-import { Button } from "@mantine/core";
+import { Button, Center, SimpleGrid } from "@mantine/core";
 import React from "react";
 
 function NavBar() {
     return (
         <>
-            <Button variant="outline">Home</Button>
-            <Button>Contact</Button>
+            <Center>
+                <h1>LOGAN MEMORIAL PRESBYTERIAN CHURCH</h1>
+            </Center>
+            <SimpleGrid cols={5}>
+                <Button>Home</Button>
+                <Button>Contact</Button>
+                <Button>Missions</Button>
+                <Button>Grow Groups and Bible Studies</Button>
+                <Button>Faces of Logan</Button>
+            </SimpleGrid>
         </>
     );
 }

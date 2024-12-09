@@ -1,8 +1,9 @@
+import { Box } from '@mantine/core'
 import '../styling/Lander.css'
 
 function Lander() {
   return (
-    <div className='Lander'>Lander</div>
+    <Box sx={{ minHeight:'900px'}} className='Lander'>Lander</Box>
   )
 }
 

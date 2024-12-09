@@ -5,6 +5,8 @@ import Article from "./Article";
 import Lander from "./Lander";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import Header from "./Header";
+import { AppShell, Header as MantineHeader, Navbar as MantineNavbar, Footer as MantineFooter, Container } from "@mantine/core";
 
 function App() {
     const router = createBrowserRouter([
@@ -22,11 +24,11 @@ function App() {
     ]);
 
     return (
-        <>
-            <NavBar />
+        <Container size='md'>
+            <NavBar/>
             <RouterProvider router={router} />
-            <Footer />
-        </>
+            <Footer/>
+        </Container>
     );
 }
 
